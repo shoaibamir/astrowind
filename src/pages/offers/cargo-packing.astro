@@ -1,0 +1,347 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Cargo Packing',
+  description: 'Expert Cargo Packing in Dubai for secure shipments. Contact us for reliable service to/from Pakistan. Call us now for tailored solution',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Call',
+          href: 'tel:+971504948135',
+        },
+        {
+          variant: 'primary',
+          text: 'WhatsApp',
+          href: 'https://wa.me/message/TJZP4WU2P2XGD1',
+          target: '_blank',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Cargo Packing"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Call', href: 'tel:+971504948135' },
+      { text: 'WhatsApp', href: 'https://wa.me/message/TJZP4WU2P2XGD1', target: '_blank'},
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      Cargo Packing in Dubai: <br /> Abu Dhabi <span class="text-accent dark:text-white highlight"
+        >Packing Material</span
+      > Cartoon and boxes<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Get the export class <span class="font-semibold">Packing</span> Material and Servcie.</span
+      >
+      Shipping cargo from Dubai to destinations around the world demands precision and care in the packing process. As a bustling hub for global trade and logistics, Dubai's importance in ensuring safe shipments cannot be overstated.
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Why Proper Packing Matters?"
+    subtitle="Ensuring your cargo is securely packed is not just about meeting shipping standards; it's about safeguarding your goods from the inevitable jostling and handling during transit. Discover why investing in proper packing is a smart move for anyone shipping from Dubai."
+    columns={2}
+    items={[
+      {
+        title: 'Protecting the cargo during transit',
+        description:
+          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Reducing the risk of damage and breakage',
+        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Complying with international shipping standards',
+        description:
+          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Best Practices for Secure Packing',
+        description: `Uncover the secrets of effective packing techniques, including proper cushioning, strategic securing of fragile items, and the importance of sealing and labeling. These practices are your armor against the chaos of transit.`,
+        icon: 'tabler:podium',
+      },
+     
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Types of Cargo Packing Materials"
+    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
+    isReversed
+    items={[
+      {
+        title: 'Cardboard boxes and cartons:',
+        description:
+          'Delve into the world of packing materials – from sturdy cardboard boxes to protective bubble wrap. Understanding the right materials for your cargo is the first step towards secure and damage-free shipments.',
+      },
+      {
+        title: 'Bubble wrap and packing peanuts:',
+        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+      },
+      {
+        title: 'Wooden crates and pallets:',
+        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+      },
+
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+      alt: 'Startup Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Choosing the Right Packing Materials: <br /><span class="text-2xl">Launching with AstroWind</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Best Practices for Secure Packing:',
+        description: `Uncover the secrets of effective packing techniques, including proper cushioning, strategic securing of fragile items, and the importance of sealing and labeling. These practices are your armor against the chaos of transit.`,
+      },
+      {
+        title: 'Special Considerations for Different Types of Cargo:',
+        description: `Whether you're shipping electronics, fragile goods, or perishable items, discover tailor-made packing strategies to ensure the safety of your specific cargo.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+      alt: 'SaaS Businesses Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Cargo Packing Techniques: <br /><span class="text-2xl">Streamlining user experience</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Understanding the Cost Factors:',
+        description: `Dive into the factors influencing the cost of cargo packing, including cargo type, packing materials, and the choice between professional and DIY packing.`,
+      },
+      {
+        title: 'Budgeting Tips for Effective Cargo Packing:',
+        description: `Discover practical tips to strike the right balance between cost-effectiveness and ensuring the quality of your cargo packing.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Portfolio Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Cost Considerations and Budgeting: <br /><span class="text-2xl">We cna help you</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Cargo Packing and E-commerce:',
+        description: `For businesses involved in e-commerce, this section explores tailored packing strategies to meet the unique demands of shipping individual orders. From reducing packaging waste to enhancing the unboxing experience, discover how e-commerce is reshaping cargo packing.`,
+      },
+      {
+        title: 'Benefits of Professional Cargo Packing:',
+        description: `From expertise in handling diverse cargo to compliance with international packing standards, explore how professional packing services can elevate your shipping experience.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Small Business Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Business and Professional Packing: <br /><span class="text-2xl">Demystifying Customs Clearance</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Pricing Widget ******************* -->
+
+  <!-- <Pricing
+    title="Flexible pricing plans"
+    prices={[
+      {
+        title: 'Boxes',
+        subtitle: 'Access to core features and a wide range of templates',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Get Started for Free',
+          href: '#',
+        },
+      },
+      {
+        title: 'pro',
+        subtitle: 'Premium templates and advanced customization',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Upgrade to Pro',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Tailored solutions for large-scale projects',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Unlock Enterprise Features',
+          href: '#',
+        },
+      },
+    ]}
+  /> -->
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'Is professional packing necessary for all types of cargo?',
+        description:
+          'Absolutely, professional packing ensures that diverse cargo types are handled with the expertise needed to prevent damage during transit.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'What are the advantages of using sustainable packing materials?',
+        description: `Sustainable packing materials not only contribute to environmental responsibility but also demonstrate a commitment to green practices, aligning with global expectations.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'How do I choose the right packing materials for fragile items?',
+        description:
+          'Selecting appropriate packing materials for fragile items involves a combination of cushioning materials like bubble wrap and selecting sturdy boxes.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Are there any restrictions on packing certain items for international shipping from Dubai?',
+        description: `Yes, certain items may be restricted or require special handling due to international regulations. It's crucial to check with your chosen cargo company for guidance.`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Reach out to us"
+    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
+    callToAction={{
+      text: 'Contact us',
+      href: '/contact',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'contact@pakistancargo.org',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Call us',
+        description: '+971 50 4948135',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Follow us',
+        description: '@Pakistani_cargo',
+        icon: 'tabler:brand-twitter',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Stay informed with Pakistancargo.org's blog"
+    information={`Explore our collection of articles, guides effectively for your projects.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

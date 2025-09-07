@@ -1,0 +1,48 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Book a Cargo and Win Air Ticket for Pakistan',
+  description: 'Dependable cargo to Pakistan services for timely deliveries. Simplify your logistics with our reliable and efficient shipping solutions.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Send Cargo to Pakistan"
+    title="Win Air Ticket for Pakistan"
+    subtitle="Are you planing to go to Pakistan? <br>Send your cargo to Pakistan and apply to win the Air ticket to Pakistan.<br><br> کیا آپ پاکستان جانے کا ارادہ کر رہے ہیں؟ ہمارے پاس آپ کے لیے آفر ہے۔ پاکستان کا ہوائی ٹکٹ جیتنے کے لیے اپلائی کریں۔<br>*شرائط و ضوابط لاگو ہوتے ہیں۔"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Apply to Win',
+        href: 'https://forms.gle/TmRPFY4vfhGutqGQ6',
+        target: '_blank',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: 'Learn more', href: '/contact' },
+    ]}
+    image={{
+      src: 'https://cdn.pixabay.com/photo/2024/05/18/01/09/ai-generated-8769302_1280.jpg',
+      alt: 'Cargo ticket for Pakistan',
+    }}
+  />
+
+  <CallToAction
+    title="Contact Us"
+    subtitle="Feel free to contact us if you have any question about cargo ticket!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact',
+        href: '/contact',
+        icon: 'tabler:phone',
+      },
+    ]}
+  />
+</Layout>

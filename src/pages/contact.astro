@@ -6,6 +6,8 @@ import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
   title: 'Contact',
+  description:
+    'Connect seamlessly with Pakistan Cargo! Contact us for reliable shipping solutions. Your trusted partner for efficient logistics. Call us now',
 };
 ---
 
@@ -13,9 +15,8 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText tagline="Contact" title="Let's Connect!" />
-
+    
   <ContactUs
-    id="form"
     title="Drop us a message today!"
     subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
     inputs={[
@@ -39,6 +40,7 @@ const metadata = {
     }}
     description="Our support team typically responds within 24 business hours."
   />
+  
 
   <!-- Features2 Widget ************** -->
 
@@ -46,32 +48,46 @@ const metadata = {
     title="We are here to help!"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Consultation about shipping',
+        description: `Chat with us for questions about Services and inquiries about cargo shipping, etc.`,
       },
       {
         title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+        description: 'Chat with us for questions about Services and inquiries about cargo shipping, etc.',
       },
       {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+        title: 'Followup',
+        description: 'Chat with us for questions about Services and inquiries about cargo shipping, etc.',
       },
       {
         title: 'Phone',
-        description: '+1 (234) 567-890',
+        description: '<a href="tel:+971504948135">+971504948135</a>',
+        icon: 'tabler:headset',
+      },
+
+      {
+        title: 'Phone',
+        description: 'tel:+971',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Phone',
+        description: '<a href="tel:+971585817087">+971585817087</>',
         icon: 'tabler:headset',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'contact@pakistancargo.org',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Dubai',
+        description: 'Jebel Ali Industrial, Dubai, UAE',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'Abu Dhabi',
+        description: 'Mussafah 40, Abu Dhabi, UAE',
         icon: 'tabler:map-pin',
       },
     ]}

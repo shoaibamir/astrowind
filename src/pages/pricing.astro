@@ -9,6 +9,8 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Pricing',
+  description:
+    'Discover competitive Pakistan cargo rates! Your reliable shipping partner. Contact us for quotes and hassle-free deliveries. Reach us now',
 };
 ---
 
@@ -17,8 +19,8 @@ const metadata = {
 
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Pakistan Cargo Rates and Price"
+    subtitle="These are standard prices and you can get discounted price if you have more cargo."
   />
 
   <!-- Pricing Widget ******************* -->
@@ -28,83 +30,82 @@ const metadata = {
     subtitle="Only pay for what you need"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'General cargo',
+        subtitle: 'Price starts from',
+        price: 3.0,
+        period: 'per KG',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'General Boxes, cloths, Shoes',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Wooden dismantle able furniture',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Kitchen items non electronics',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Bed sheets, curtains, other households',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-      },
-      {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Contact us',
+          href: '/contact',
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Small Electronics- Used',
+        subtitle: 'Price starts',
+        price: 12.0,
+        period: 'Per KG',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Small Kitchen Appliances',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Juicer, Blenders etc',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Iron, Fan, Water Dispenser etc',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Exercise Machines',
+          },
+         
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Contact us',
+          href: '/contact',
+        },
+        
+      },
+      {
+        title: 'Volume Base Items',
+        subtitle: 'Price starts from',
+        price: 5.0,
+        period: 'Per KG',
+        items: [
+          {
+            description: 'Matterses',
+          },
+          {
+            description: 'Foam',
+          },
+          {
+            description: 'Sofa',
+          },
+          {
+            description: 'Big toys, Majlis, Foamy items.',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Contact us',
+          href: '/contact',
         },
       },
     ]}
@@ -113,13 +114,13 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
+    title="Competitive and Transparent Pricing"
     subtitle="Discover the advantages of choosing our plans"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
+        title: 'Per KG Rate',
+        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements for uae to pakistan delivery charges.',
         icon: 'tabler:stairs',
       },
       {
@@ -133,18 +134,18 @@ const metadata = {
         icon: 'tabler:shield-lock',
       },
       {
-        title: 'Instant Access',
+        title: 'Instant Payment on spot',
         description: `Immediate access to your chosen plan's features and templates upon subscription.`,
         icon: 'tabler:accessible',
       },
       {
-        title: 'Upgrade Value',
+        title: 'Cash Payment',
         description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
         icon: 'tabler:chevrons-up',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Bank Transfer',
+        description: 'Questions  answered via live chat, email or phone, every calendar day.',
         icon: 'tabler:headset',
       },
     ]}
@@ -154,41 +155,41 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="A journey from first call to door delivery"
+    tagline="simple process"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Explore pricing',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Call us for clarification',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Schedule a pickup',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Weigh the cargo in your presence',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Seal the cargo and billing process',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Shipping and delivery',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Get your cargo at your door step',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: 'https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?q=80&w=1666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Steps image',
     }}
   />
@@ -197,33 +198,30 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Frequent asked question about Pakistan cargo rates and prices."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'How much a full container cost?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'Full container charges varies depends on number or items, packing, dismantling work and destination.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+        title: 'Is there any hidden charges?',
+        description: 'Absolutely not, we will clarify all the charges before to pickup the cargo.',
       },
       {
-        title: 'Can I switch between plans?',
+        title: 'What is the furniture cargo price?',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'Wooden furniture shipping charges starts from AED 3.0/kg if they are not volumative or can be dismantle.',
       },
       {
         title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+        description: 'Cash at the time of pickup but we also accept bank transfer into bank account.',
       },
       {
         title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+        description: 'No, invoice charges are final as per your declration , no other charges.',
       },
     ]}
   />
@@ -231,13 +229,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Contact us Now?"
+    subtitle="We will help to send your cargo to Pakistan safely."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Call us Now',
+        href: 'tel:+971504948135',
       },
     ]}
   />
